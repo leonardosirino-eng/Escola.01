@@ -1,1 +1,152 @@
+/* Configurações Gerais e Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #24292e 0%, #4c51bf 100%);
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.card h2 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-left: 4px solid #4c51bf;
+    padding-left: 12px;
+}
+
+.card p {
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-position: inside;
+    color: #4a5568;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Área do Contador Interativo */
+.counter-container {
+    text-align: center;
+    margin: 25px 0 10px 0;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-radius: 8px;
+}
+
+#counter-value {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Botões */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-success {
+    background-color: #48bb78;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #38a169;
+}
+
+.btn-danger {
+    background-color: #f56565;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e53e3e;
+}
+
+.btn-secondary {
+    background-color: #edf2f7;
+    color: #4a5568;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #24292e;
+    color: #a0aec0;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
